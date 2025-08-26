@@ -26,7 +26,7 @@
       "otherItems": false,
       "pads": false,
       "text": false,
-      "tracks": false,
+      "tracks": true,
       "vias": false,
       "zones": false
     },
@@ -49,8 +49,8 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_575555f5",
-    "zone_display_mode": 1
+    "visible_layers": "ffffffff_ffffffff_fffffff5_57555555",
+    "zone_display_mode": 0
   },
   "git": {
     "repo_type": "",

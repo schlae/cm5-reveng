@@ -66,6 +66,11 @@ The original board has no designators, so the ones in this design are
 made up, with the exception of the test points, which are documented
 in the official RPi datasheet.
 
+The 5V input goes through a hot-swap circuit with a series pass MOSFET. Since
+there is a test point on either side of the MOSFET and the part number is
+known (DMG7430LFG), you could monitor the voltage across and compute the
+supply current based on the MOSFET RDSON.
+
 ## Board Stackup
 
 By very carefully sanding through the board one layer at a time, I figured
@@ -166,6 +171,47 @@ coordinate, and subtract the Y coordinate from 100.
 | TP75      | 41.6  | 37.8  | ETH3\_P |
 | TP76      | 42.9  | 36.1  | ETH3\_N |
 | TP77      | 14.37 | 19.52 | +5V     | Raw 5V power to board. |
+
+## RP1 Pinout Mysteries
+
+There are some pins that have not been identified because they're not connected
+on the CM5:
+
+| Pin | Guess |
+|-----|-------|
+| A2  | |
+| B3  | |
+| C2  | |
+| C3  | |
+| C4  | |
+| D1  | |
+| E3  | |
+| E10  | |
+| E15  | |
+| F1  | |
+| F2  | |
+| F3  | |
+| F7  | |
+| G1  | |
+| G2  | |
+| H1  | |
+| H3  | |
+| H7  | |
+| H17 | USB 2.0? |
+| H18 | USB 2.0? |
+| J15  | |
+| J17  | |
+| L13  | |
+| L15  | |
+| M17  |USB 2.0? |
+| M18  |USB 2.0? |
+| R4  | |
+| T3  | |
+| T4  | |
+| T13  | |
+| T14  | |
+| V2  | |
+| V3  | |
 
 ## Future Work
 
